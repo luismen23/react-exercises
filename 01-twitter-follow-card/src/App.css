@@ -1,0 +1,76 @@
+.App {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8em;
+    flex-direction: column;
+   
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+}
+
+.image {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.boton {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+    max-width: 150px;
+}
+.boton:hover {
+    opacity: .8;
+}
+
+.followCard {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 400px;
+    justify-content: space-between;
+    
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.boton.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+}
+
+.boton.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+}
+
+.dejarSeguir {
+    display: none;
+}
+
+.boton.is-following:hover .dejarSeguir {
+    display: block;
+}
+
+.boton.is-following:hover .seguir {
+    display: none;
+}
